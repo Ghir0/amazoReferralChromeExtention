@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "TechMonkeys' Referral Random Bot",
+  "description": "If the URL is from Amazon.it, this extension replace, or adds, a random referral (randomly selected) to the URL",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.it/*"],
+      "js": ["random_string.js"]
+    }
+  ],
+  "permissions": ["tabs"]
+}
